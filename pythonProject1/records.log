@@ -1,0 +1,509 @@
+2021-12-03 16:01:52,909 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-03 16:02:06,644 INFO 127.0.0.1 - - [03/Dec/2021 16:02:06] "POST /customer HTTP/1.1" 200 -
+2021-12-03 16:02:11,180 INFO 127.0.0.1 - - [03/Dec/2021 16:02:11] "GET /customer HTTP/1.1" 200 -
+2021-12-03 16:02:36,880 ERROR Exception on /customer/5 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: update_customer() got an unexpected keyword argument 'customer_id'
+2021-12-03 16:02:36,900 INFO 127.0.0.1 - - [03/Dec/2021 16:02:36] "[35m[1mPATCH /customer/5 HTTP/1.1[0m" 500 -
+2021-12-03 16:02:42,385 INFO 127.0.0.1 - - [03/Dec/2021 16:02:42] "DELETE /customer/2 HTTP/1.1" 200 -
+2021-12-03 16:02:46,651 INFO 127.0.0.1 - - [03/Dec/2021 16:02:46] "POST /account HTTP/1.1" 200 -
+2021-12-03 16:02:50,971 INFO 127.0.0.1 - - [03/Dec/2021 16:02:50] "GET /account HTTP/1.1" 200 -
+2021-12-03 16:03:00,078 ERROR Exception on /account/89 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 48, in get_account_by_id
+    result_as_dictionary = result.make_account_dictionary()
+AttributeError: 'NoneType' object has no attribute 'make_account_dictionary'
+2021-12-03 16:03:00,079 INFO 127.0.0.1 - - [03/Dec/2021 16:03:00] "[35m[1mGET /account/89 HTTP/1.1[0m" 500 -
+2021-12-03 16:04:05,075 INFO 127.0.0.1 - - [03/Dec/2021 16:04:05] "GET /account/8 HTTP/1.1" 200 -
+2021-12-03 16:04:11,966 INFO 127.0.0.1 - - [03/Dec/2021 16:04:11] "DELETE /account/2 HTTP/1.1" 200 -
+2021-12-05 19:26:33,329 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 19:27:36,746 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 19:27:47,729 INFO 127.0.0.1 - - [05/Dec/2021 19:27:47] "POST /account HTTP/1.1" 200 -
+2021-12-05 19:27:52,172 INFO 127.0.0.1 - - [05/Dec/2021 19:27:52] "POST /customer HTTP/1.1" 200 -
+2021-12-05 19:28:07,331 INFO 127.0.0.1 - - [05/Dec/2021 19:28:07] "PATCH /customer/5 HTTP/1.1" 200 -
+2021-12-05 19:40:02,851 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 10:24:48,357 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 10:24:57,685 INFO 127.0.0.1 - - [06/Dec/2021 10:24:57] "POST /account HTTP/1.1" 200 -
+2021-12-06 10:26:27,523 INFO 127.0.0.1 - - [06/Dec/2021 10:26:27] "[31m[1mPATCH /account/8 HTTP/1.1[0m" 405 -
+2021-12-06 10:26:47,894 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: withdrawal_from_account_by_id() missing 1 required positional argument: 'withdraw_value'
+2021-12-06 10:26:47,915 INFO 127.0.0.1 - - [06/Dec/2021 10:26:47] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:36:09,838 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 13:36:15,693 INFO 127.0.0.1 - - [06/Dec/2021 13:36:15] "POST /account HTTP/1.1" 200 -
+2021-12-06 13:36:22,944 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: withdrawal_from_account_by_id() missing 1 required positional argument: 'withdraw_value'
+2021-12-06 13:36:22,946 INFO 127.0.0.1 - - [06/Dec/2021 13:36:22] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:37:01,439 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: withdrawal_from_account_by_id() missing 1 required positional argument: 'withdraw_value'
+2021-12-06 13:37:01,440 INFO 127.0.0.1 - - [06/Dec/2021 13:37:01] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:37:13,008 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 13:37:18,335 INFO 127.0.0.1 - - [06/Dec/2021 13:37:18] "POST /account HTTP/1.1" 200 -
+2021-12-06 13:37:22,032 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: withdrawal_from_account_by_id() missing 1 required positional argument: 'withdraw_value'
+2021-12-06 13:37:22,035 INFO 127.0.0.1 - - [06/Dec/2021 13:37:22] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:44:16,341 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: withdrawal_from_account_by_id() missing 1 required positional argument: 'withdraw_value'
+2021-12-06 13:44:16,342 INFO 127.0.0.1 - - [06/Dec/2021 13:44:16] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:44:27,888 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 13:44:31,759 INFO 127.0.0.1 - - [06/Dec/2021 13:44:31] "POST /account HTTP/1.1" 200 -
+2021-12-06 13:44:35,371 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 87, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account.account_id))
+NameError: name 'withdraw_value' is not defined
+2021-12-06 13:44:35,374 INFO 127.0.0.1 - - [06/Dec/2021 13:44:35] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:47:08,853 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 13:47:12,573 INFO 127.0.0.1 - - [06/Dec/2021 13:47:12] "POST /account HTTP/1.1" 200 -
+2021-12-06 13:47:15,880 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 83, in withdrawal_from_account_by_id
+    result_as_dictionary = result.make_account_dictionary()
+AttributeError: 'int' object has no attribute 'make_account_dictionary'
+2021-12-06 13:47:15,882 INFO 127.0.0.1 - - [06/Dec/2021 13:47:15] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:47:35,065 ERROR Exception on /account/withdraw/8 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 83, in withdrawal_from_account_by_id
+    result_as_dictionary = result.make_account_dictionary()
+AttributeError: 'int' object has no attribute 'make_account_dictionary'
+2021-12-06 13:47:35,068 INFO 127.0.0.1 - - [06/Dec/2021 13:47:35] "[35m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 500 -
+2021-12-06 13:54:03,449 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 13:54:06,781 INFO 127.0.0.1 - - [06/Dec/2021 13:54:06] "POST /account HTTP/1.1" 200 -
+2021-12-06 13:54:09,770 INFO 127.0.0.1 - - [06/Dec/2021 13:54:09] "PATCH /account/withdraw/8 HTTP/1.1" 200 -
+2021-12-06 14:00:50,768 INFO 127.0.0.1 - - [06/Dec/2021 14:00:50] "POST /account HTTP/1.1" 200 -
+2021-12-06 15:24:50,428 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 15:24:58,053 INFO 127.0.0.1 - - [06/Dec/2021 15:24:58] "POST /account HTTP/1.1" 200 -
+2021-12-06 15:25:04,506 INFO 127.0.0.1 - - [06/Dec/2021 15:25:04] "PATCH /account/withdraw/8 HTTP/1.1" 200 -
+2021-12-06 15:26:11,429 INFO 127.0.0.1 - - [06/Dec/2021 15:26:11] "PATCH /account/withdraw/1 HTTP/1.1" 200 -
+2021-12-06 15:34:28,113 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 15:34:32,602 INFO 127.0.0.1 - - [06/Dec/2021 15:34:32] "POST /account HTTP/1.1" 200 -
+2021-12-06 15:34:43,187 INFO 127.0.0.1 - - [06/Dec/2021 15:34:43] "PATCH /account/withdraw/8 HTTP/1.1" 200 -
+2021-12-06 15:37:11,111 INFO 127.0.0.1 - - [06/Dec/2021 15:37:11] "POST /account HTTP/1.1" 200 -
+2021-12-06 15:38:02,744 INFO 127.0.0.1 - - [06/Dec/2021 15:38:02] "PATCH /account/withdraw/1 HTTP/1.1" 200 -
+2021-12-06 15:40:40,319 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 15:40:47,287 INFO 127.0.0.1 - - [06/Dec/2021 15:40:47] "PATCH /account/withdraw/1 HTTP/1.1" 200 -
+2021-12-06 15:43:42,876 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 15:43:49,749 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 86, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 38, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 15:43:49,759 INFO 127.0.0.1 - - [06/Dec/2021 15:43:49] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 15:45:02,052 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 15:45:05,539 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 86, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 38, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 15:45:05,544 INFO 127.0.0.1 - - [06/Dec/2021 15:45:05] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 15:48:06,782 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 86, in withdrawal_from_account_by_id
+    except NegativeWithdrawalMoneyException or NegativeBalanceFromWithdrawingMoneyException as e:
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 38, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 15:48:06,784 INFO 127.0.0.1 - - [06/Dec/2021 15:48:06] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 15:57:43,569 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:01:41,850 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:01:41,854 INFO 127.0.0.1 - - [06/Dec/2021 16:01:41] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:01:45,280 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 83, in withdrawal_from_account_by_id
+    @app.patch("/account/withdraw/<account_id>")
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 37, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:01:45,280 INFO 127.0.0.1 - - [06/Dec/2021 16:01:45] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 16:05:07,886 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:05:11,486 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:05:11,489 INFO 127.0.0.1 - - [06/Dec/2021 16:05:11] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:05:14,406 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 88, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 37, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:05:14,409 INFO 127.0.0.1 - - [06/Dec/2021 16:05:14] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 16:08:35,088 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:08:35,089 INFO 127.0.0.1 - - [06/Dec/2021 16:08:35] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:08:39,341 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:08:39,346 INFO 127.0.0.1 - - [06/Dec/2021 16:08:39] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:08:41,677 ERROR Exception on /account/withdraw/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 88, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 37, in service_withdrawal_from_account_by_id
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 26, in get_all_account_by_id
+    cursor = connection.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-12-06 16:08:41,678 INFO 127.0.0.1 - - [06/Dec/2021 16:08:41] "[35m[1mPATCH /account/withdraw/1 HTTP/1.1[0m" 500 -
+2021-12-06 16:10:04,443 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:11:30,142 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:11:41,710 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:11:49,565 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 19, in service_create_account
+    created_account = self.account_dao.create_account(account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 10, in create_account
+    cursor.execute(sql, (account.account_number, account.account_balance, account.customer_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\psycopg\cursor.py", line 564, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.ForeignKeyViolation: insert or update on table "account" violates foreign key constraint "account_customer_id_fkey"
+DETAIL:  Key (customer_id)=(100) is not present in table "customer".
+2021-12-06 16:11:49,573 INFO 127.0.0.1 - - [06/Dec/2021 16:11:49] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:12:16,256 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 27, in get_all_account_by_id
+    cursor.execute(sql)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\psycopg\cursor.py", line 564, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+2021-12-06 16:12:16,257 INFO 127.0.0.1 - - [06/Dec/2021 16:12:16] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:12:32,640 ERROR Exception on /account [POST]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 38, in create_account
+    account_to_return = account_service.service_create_account(new_account)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 14, in service_create_account
+    accounts = self.account_dao.get_all_account_by_id()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 27, in get_all_account_by_id
+    cursor.execute(sql)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\psycopg\cursor.py", line 564, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+2021-12-06 16:12:32,640 INFO 127.0.0.1 - - [06/Dec/2021 16:12:32] "[35m[1mPOST /account HTTP/1.1[0m" 500 -
+2021-12-06 16:13:08,404 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:13:13,209 INFO 127.0.0.1 - - [06/Dec/2021 16:13:13] "POST /account HTTP/1.1" 200 -
+2021-12-06 16:13:28,725 INFO 127.0.0.1 - - [06/Dec/2021 16:13:28] "[31m[1mPATCH /account/withdraw/6 HTTP/1.1[0m" 400 -
+2021-12-06 16:13:46,682 INFO 127.0.0.1 - - [06/Dec/2021 16:13:46] "[31m[1mPATCH /account/withdraw/6 HTTP/1.1[0m" 400 -
+2021-12-06 16:14:49,181 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:14:57,052 ERROR Exception on /account/withdraw/6 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 88, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 40, in service_withdrawal_from_account_by_id
+    raise NegativeBalanceFromWithdrawingMoneyException("You cannot withdraw negative money into your account")
+custom_exceptions.duplicate_account_number_exception.NegativeBalanceFromWithdrawingMoneyException: You cannot withdraw negative money into your account
+2021-12-06 16:14:57,055 INFO 127.0.0.1 - - [06/Dec/2021 16:14:57] "[35m[1mPATCH /account/withdraw/6 HTTP/1.1[0m" 500 -
+2021-12-06 16:15:01,502 INFO 127.0.0.1 - - [06/Dec/2021 16:15:01] "POST /account HTTP/1.1" 200 -
+2021-12-06 16:15:08,725 ERROR Exception on /account/withdraw/7 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 88, in withdrawal_from_account_by_id
+    result = account_service.service_withdrawal_from_account_by_id(float(withdraw_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 40, in service_withdrawal_from_account_by_id
+    raise NegativeBalanceFromWithdrawingMoneyException("You cannot withdraw negative money into your account")
+custom_exceptions.duplicate_account_number_exception.NegativeBalanceFromWithdrawingMoneyException: You cannot withdraw negative money into your account
+2021-12-06 16:15:08,725 INFO 127.0.0.1 - - [06/Dec/2021 16:15:08] "[35m[1mPATCH /account/withdraw/7 HTTP/1.1[0m" 500 -
+2021-12-06 16:16:25,709 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:16:30,294 INFO 127.0.0.1 - - [06/Dec/2021 16:16:30] "POST /account HTTP/1.1" 200 -
+2021-12-06 16:16:35,707 INFO 127.0.0.1 - - [06/Dec/2021 16:16:35] "[31m[1mPATCH /account/withdraw/8 HTTP/1.1[0m" 400 -
+2021-12-06 16:24:32,816 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 16:24:36,560 INFO 127.0.0.1 - - [06/Dec/2021 16:24:36] "POST /account HTTP/1.1" 200 -
+2021-12-06 16:24:41,749 INFO 127.0.0.1 - - [06/Dec/2021 16:24:41] "PATCH /account/withdraw/9 HTTP/1.1" 200 -
+2021-12-06 16:25:08,956 INFO 127.0.0.1 - - [06/Dec/2021 16:25:08] "[31m[1mPATCH /account/9 HTTP/1.1[0m" 405 -
+2021-12-06 16:27:11,030 INFO 127.0.0.1 - - [06/Dec/2021 16:27:11] "PATCH /account/deposit/9 HTTP/1.1" 200 -
+2021-12-06 20:56:53,728 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 20:58:28,968 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 20:58:30,384 INFO 127.0.0.1 - - [06/Dec/2021 20:58:30] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-06 20:58:47,141 INFO 127.0.0.1 - - [06/Dec/2021 20:58:47] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-06 21:46:19,879 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 21:46:26,196 INFO 127.0.0.1 - - [06/Dec/2021 21:46:26] "POST /account HTTP/1.1" 200 -
+2021-12-06 21:54:44,027 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 21:55:11,868 INFO 127.0.0.1 - - [06/Dec/2021 21:55:11] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-06 22:25:22,335 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 22:25:31,106 INFO 127.0.0.1 - - [06/Dec/2021 22:25:31] "POST /customer HTTP/1.1" 200 -
+2021-12-06 22:35:04,314 INFO 127.0.0.1 - - [06/Dec/2021 22:35:04] "POST /account HTTP/1.1" 200 -
+2021-12-06 22:35:17,535 ERROR Exception on /account/deposit/9 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\main.py", line 74, in deposit_into_account_by_id
+    result = account_service.service_deposit_into_account_by_id(float(deposit_value), int(account_id))
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\service_layer\implementation_services\account_postgres_service.py", line 34, in service_deposit_into_account_by_id
+    return self.account_dao.deposit_into_account_by_id(float(account_balance), account_id)
+  File "C:\Users\Loc Phan\PycharmProjects\pythonProject1\data_access_layer\implementation_classes\account_postgres_dao.py", line 39, in deposit_into_account_by_id
+    account_balance = cursor.fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+2021-12-06 22:35:17,538 INFO 127.0.0.1 - - [06/Dec/2021 22:35:17] "[35m[1mPATCH /account/deposit/9 HTTP/1.1[0m" 500 -
+2021-12-06 22:35:20,840 INFO 127.0.0.1 - - [06/Dec/2021 22:35:20] "PATCH /account/withdraw/9 HTTP/1.1" 200 -
+2021-12-06 22:35:29,713 INFO 127.0.0.1 - - [06/Dec/2021 22:35:29] "PATCH /account/deposit/4 HTTP/1.1" 200 -
+2021-12-06 22:35:38,607 INFO 127.0.0.1 - - [06/Dec/2021 22:35:38] "PATCH /account/withdraw/4 HTTP/1.1" 200 -
+2021-12-06 22:35:49,852 INFO 127.0.0.1 - - [06/Dec/2021 22:35:49] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-06 22:48:49,985 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 22:48:54,564 INFO 127.0.0.1 - - [06/Dec/2021 22:48:54] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-06 22:51:08,788 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-06 22:51:20,816 INFO 127.0.0.1 - - [06/Dec/2021 22:51:20] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-07 00:50:41,648 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-07 00:50:54,588 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-07 00:50:58,561 INFO 127.0.0.1 - - [07/Dec/2021 00:50:58] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-07 00:52:11,421 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-07 00:52:16,623 INFO 127.0.0.1 - - [07/Dec/2021 00:52:16] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-07 00:57:12,910 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-07 00:57:15,706 INFO 127.0.0.1 - - [07/Dec/2021 00:57:15] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-07 00:57:16,560 INFO 127.0.0.1 - - [07/Dec/2021 00:57:16] "[33mPATCH /account/2/1 HTTP/1.1[0m" 404 -
+2021-12-07 00:58:39,387 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-07 00:58:42,286 INFO 127.0.0.1 - - [07/Dec/2021 00:58:42] "PATCH /account/transfer/2/1 HTTP/1.1" 200 -
